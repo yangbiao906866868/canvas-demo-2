@@ -34,8 +34,54 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.btn1 {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #999;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .btn.active {
   box-shadow: 0 0 20px deepskyblue;
   border: 1px solid deepskyblue;
+}
+.btn1.active {
+  box-shadow: 0 0 20px deepskyblue;
+  border: 1px solid deepskyblue;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xi:after {
+  content: "";
+  background: #333;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 4px;
+}
+.normal:after {
+  content: "";
+  background: #333;
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 8px;
+}
+.cu:after {
+  content: "";
+  background: #333;
+  width: 32px;
+  height: 32px;
+  display: block;
+  border-radius: 16px;
 }
