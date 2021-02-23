@@ -5,6 +5,7 @@ canvas.width = document.documentElement.clientWidth;
 canvas.height = document.documentElement.clientHeight-100;
 let ctx = canvas.getContext("2d");
 
+
 let huaban={
   type:"huabi",
   isDraw:false,
@@ -26,6 +27,7 @@ let huaban={
   },
 }
 
+
 let huabiBtn = document.querySelector('#huabi')
     huabiBtn.onclick = function(){
       allBtn.forEach(function(item,i){
@@ -34,6 +36,7 @@ let huabiBtn = document.querySelector('#huabi')
     huabiBtn.classList.add("active")
     huaban.type = "huabi"
   }
+
 
   // 设计粗细的按钮
   let lineDivs = document.querySelectorAll(".line")
@@ -60,6 +63,7 @@ colorInput.onchange = function(e){
   // console.log(colorInput.value)
   huaban.color = colorInput.value
 }
+
 
 //监听鼠标按下事件
 canvas.onmousedown = function(e){
